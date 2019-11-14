@@ -9,7 +9,7 @@ var Twig = require('twig');
 keystone.init({
 	'name': 'consorcio-pimentel',
 	'brand': 'consorcio-pimentel',
-
+	'mongo': process.env.MONGO_URI || "mongodb://rodoflho:Ro150462@localhost/mongo1",
 	'less': 'public',
 	'static': 'public',
 	'favicon': 'public/favicon.ico',
